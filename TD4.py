@@ -90,6 +90,11 @@ class Tree:
         else:
             return False
         
+    def rotate_node_left(self, node):
+        if node.right is not None:
+            node.right.left = Node(leaf.tag)
+
+        return node.right
     
 
 
